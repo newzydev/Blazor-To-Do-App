@@ -1,0 +1,110 @@
+﻿@page "/"
+@using System.Text.Json
+@inject IJSRuntime JSRuntime
+
+<h1 class="text-center my-4">Blazor To-Do List</h1>
+
+<div class="container">
+    <div class="row mb-3">
+        <div class="col-md-8">
+            <input type="text" class="form-control" @bind="newTask" placeholder="Add a new task..." />
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-primary w-100" @onclick="AddTask">Add Task</button>
+        </div>
+    </div>
+
+    <ul class="list-group">
+        @if (tasks.Count == 0)
+        {
+            <li class="list-group-item text-center">No tasks yet!</li>
+        }
+        else
+        {
+            @foreach (var task in tasks)
+            {
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    @if (task.IsEditing)
+                    {
+                        <input type="text" class="form-control me-2" @bind="task.Text" />
+                        <button class="btn btn-success btn-sm" @onclick="() => SaveEdit(task)">Save</button>
+                    }
+                    else
+                    {
+                        @task.Text
+                        <div>
+                            <button class="btn btn-warning btn-sm me-2" @onclick="() => EditTask(task)">Edit</button>
+                            <button class="btn btn-danger btn-sm" @onclick="() => RemoveTask(task)">Delete</button>
+                        </div>
+                    }
+                </li>
+            }
+        }
+    </ul>
+</div>
+
+@code {
+    private string newTask = string.Empty;
+
+    // Task Model
+    private class TaskItem
+    {
+        public string Text { get; set; } = string.Empty;
+        public bool IsEditing { get; set; } = false;
+    }
+
+    private List<TaskItem> tasks = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Load tasks from local storage when the page initializes
+        var storedTasks = await GetLocalStorage("tasks");
+        if (!string.IsNullOrWhiteSpace(storedTasks))
+        {
+            tasks = JsonSerializer.Deserialize<List<TaskItem>>(storedTasks) ?? new List<TaskItem>();
+        }
+    }
+
+    private async Task AddTask()
+    {
+        if (!string.IsNullOrWhiteSpace(newTask))
+        {
+            tasks.Add(new TaskItem { Text = newTask });
+            newTask = string.Empty;
+            await SaveToLocalStorage();
+        }
+    }
+
+    private async Task RemoveTask(TaskItem task)
+    {
+        tasks.Remove(task);
+        await SaveToLocalStorage();
+    }
+
+    private void EditTask(TaskItem task)
+    {
+        task.IsEditing = true;
+    }
+
+    private async Task SaveEdit(TaskItem task)
+    {
+        task.IsEditing = false;
+        await SaveToLocalStorage();
+    }
+
+    private async Task SaveToLocalStorage()
+    {
+        var json = JsonSerializer.Serialize(tasks);
+        await SetLocalStorage("tasks", json);
+    }
+
+    private async Task SetLocalStorage(string key, string value)
+    {
+        await JSRuntime.InvokeVoidAsync("localStorage.setItem", key, value);
+    }
+
+    private async Task<string> GetLocalStorage(string key)
+    {
+        return await JSRuntime.InvokeAsync<string>("localStorage.getItem", key);
+    }
+}
