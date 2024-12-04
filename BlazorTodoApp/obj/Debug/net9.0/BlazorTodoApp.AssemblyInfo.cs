@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazorTodoApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0e7ebe3168cff2d918e1268421a38f3d16ef9f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorTodoApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorTodoApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

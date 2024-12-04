@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{C9A5DF9C-0737-42F3-B3D2-C58B23AB1438}|BlazorTodoApp\\BlazorTodoApp.csproj|solutionrelative:blazortodoapp\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C9A5DF9C-0737-42F3-B3D2-C58B23AB1438}|BlazorTodoApp\\BlazorTodoApp.csproj|c:\\blazor project\\blazortodoapp\\blazortodoapp\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9A5DF9C-0737-42F3-B3D2-C58B23AB1438}|BlazorTodoApp\\BlazorTodoApp.csproj|solutionrelative:blazortodoapp\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C9A5DF9C-0737-42F3-B3D2-C58B23AB1438}|BlazorTodoApp\\BlazorTodoApp.csproj|c:\\blazor project\\blazortodoapp\\blazortodoapp\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C9A5DF9C-0737-42F3-B3D2-C58B23AB1438}|BlazorTodoApp\\BlazorTodoApp.csproj|solutionrelative:blazortodoapp\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9A5DF9C-0737-42F3-B3D2-C58B23AB1438}|BlazorTodoApp\\BlazorTodoApp.csproj|c:\\blazor project\\blazortodoapp\\blazortodoapp\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C9A5DF9C-0737-42F3-B3D2-C58B23AB1438}|BlazorTodoApp\\BlazorTodoApp.csproj|solutionrelative:blazortodoapp\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C9A5DF9C-0737-42F3-B3D2-C58B23AB1438}|BlazorTodoApp\\BlazorTodoApp.csproj|c:\\blazor project\\blazortodoapp\\blazortodoapp\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C9A5DF9C-0737-42F3-B3D2-C58B23AB1438}|BlazorTodoApp\\BlazorTodoApp.csproj|solutionrelative:blazortodoapp\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C9A5DF9C-0737-42F3-B3D2-C58B23AB1438}|BlazorTodoApp\\BlazorTodoApp.csproj|c:\\blazor project\\blazortodoapp\\blazortodoapp\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,20 +42,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Blazor Project\\BlazorTodoApp\\BlazorTodoApp\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "BlazorTodoApp\\wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Blazor Project\\BlazorTodoApp\\BlazorTodoApp\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "BlazorTodoApp\\wwwroot\\css\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-04T05:58:30.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Blazor Project\\BlazorTodoApp\\BlazorTodoApp\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "BlazorTodoApp\\Layout\\MainLayout.razor",
               "ToolTip": "C:\\Blazor Project\\BlazorTodoApp\\BlazorTodoApp\\Layout\\MainLayout.razor",
               "RelativeToolTip": "BlazorTodoApp\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T03:07:56.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T03:07:56.539Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Blazor Project\\BlazorTodoApp\\BlazorTodoApp\\App.razor",
               "RelativeDocumentMoniker": "BlazorTodoApp\\App.razor",
@@ -59,8 +74,7 @@
               "RelativeToolTip": "BlazorTodoApp\\App.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T03:06:50.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T03:06:50.697Z"
             },
             {
               "$type": "Document",
@@ -70,23 +84,22 @@
               "RelativeDocumentMoniker": "BlazorTodoApp\\Pages\\Index.razor",
               "ToolTip": "C:\\Blazor Project\\BlazorTodoApp\\BlazorTodoApp\\Pages\\Index.razor",
               "RelativeToolTip": "BlazorTodoApp\\Pages\\Index.razor",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAG4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAABsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-04T03:06:05.215Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Blazor Project\\BlazorTodoApp\\BlazorTodoApp\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "BlazorTodoApp\\wwwroot\\index.html",
               "ToolTip": "C:\\Blazor Project\\BlazorTodoApp\\BlazorTodoApp\\wwwroot\\index.html",
               "RelativeToolTip": "BlazorTodoApp\\wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-04T03:04:08.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T03:04:08.842Z"
             }
           ]
         }

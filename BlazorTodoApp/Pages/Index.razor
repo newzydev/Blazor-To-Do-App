@@ -2,22 +2,22 @@
 @using System.Text.Json
 @inject IJSRuntime JSRuntime
 
-<h1 class="text-center my-4">Blazor To-Do List</h1>
+<h1 class="text-center my-4">รายการสิ่งที่ต้องทำ 5555</h1>
 
 <div class="container">
     <div class="row mb-3">
         <div class="col-md-8">
-            <input type="text" class="form-control" @bind="newTask" placeholder="Add a new task..." />
+            <input type="text" class="form-control form-control-lg" @bind="newTask" placeholder="Add a new task..." />
         </div>
         <div class="col-md-4">
-            <button class="btn btn-primary w-100" @onclick="AddTask">Add Task</button>
+            <button class="btn btn-primary btn-lg w-100" @onclick="AddTask">เพิ่มงาน</button>
         </div>
     </div>
 
     <ul class="list-group">
         @if (tasks.Count == 0)
         {
-            <li class="list-group-item text-center">No tasks yet!</li>
+            <li class="list-group-item text-center">ไม่มีงานที่แสดงอยู่</li>
         }
         else
         {
@@ -26,15 +26,15 @@
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     @if (task.IsEditing)
                     {
-                        <input type="text" class="form-control me-2" @bind="task.Text" />
-                        <button class="btn btn-success btn-sm" @onclick="() => SaveEdit(task)">Save</button>
+                        <input type="text" class="form-control form-control-lg me-2" @bind="task.Text" />
+                        <button class="btn btn-success btn-lg" @onclick="() => SaveEdit(task)">บันทึก</button>
                     }
                     else
                     {
                         @task.Text
                         <div>
-                            <button class="btn btn-warning btn-sm me-2" @onclick="() => EditTask(task)">Edit</button>
-                            <button class="btn btn-danger btn-sm" @onclick="() => RemoveTask(task)">Delete</button>
+                            <button class="btn btn-warning btn-lg me-2" @onclick="() => EditTask(task)">แก้ไขงาน</button>
+                            <button class="btn btn-danger btn-lg" @onclick="() => RemoveTask(task)">ลบงานนี้</button>
                         </div>
                     }
                 </li>

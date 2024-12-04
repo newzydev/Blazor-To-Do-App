@@ -52,13 +52,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gighmx6b7h"},{"Name":"integrity","Value":"sha256-2IeB3dyW3JMGXy7UJot0wheZ6M8wyg8zBZqCWTZ8h5s="},{"Name":"label","Value":"index.html"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"422"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u00222IeB3dyW3JMGXy7UJot0wheZ6M8wyg8zBZqCWTZ8h5s=\u0022"},{"Name":"Last-Modified","Value":"Wed, 04 Dec 2024 03:06:32 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"422"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u00222IeB3dyW3JMGXy7UJot0wheZ6M8wyg8zBZqCWTZ8h5s=\u0022"},{"Name":"Last-Modified","Value":"Wed, 04 Dec 2024 04:14:57 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="index.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2IeB3dyW3JMGXy7UJot0wheZ6M8wyg8zBZqCWTZ8h5s="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"422"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u00222IeB3dyW3JMGXy7UJot0wheZ6M8wyg8zBZqCWTZ8h5s=\u0022"},{"Name":"Last-Modified","Value":"Wed, 04 Dec 2024 03:06:32 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"422"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u00222IeB3dyW3JMGXy7UJot0wheZ6M8wyg8zBZqCWTZ8h5s=\u0022"},{"Name":"Last-Modified","Value":"Wed, 04 Dec 2024 04:14:57 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>
